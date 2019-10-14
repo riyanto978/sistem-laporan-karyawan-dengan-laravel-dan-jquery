@@ -1,0 +1,39 @@
+{
+	"authHost": "http://localhost/php/persopaperless/ktp",
+	"authEndpoint": "/broadcasting/auth",
+	"clients": [
+		{
+			"appId": "8d43faf403f5858f",
+			"key": "384c95b6c11dcd02f07d59ede4675fa9"
+		}
+	],
+	"database": "redis",
+	"databaseConfig": {
+		"redis": {
+			"port" : 6379,
+			"host": "localhost"			
+		},
+		"sqlite": {
+			"databasePath": "/database/laravel-echo-server.sqlite"
+		}
+	},
+	"devMode": false,
+	
+	"port": "7777",
+	"protocol": "http",
+	"socketio": {},
+	"sslCertPath": "",
+	"sslKeyPath": "",
+	"sslCertChainPath": "",
+	"sslPassphrase": "",
+	"subscribers": {
+		"http": true,
+		"redis": true
+	},
+	"apiOriginAllow": {
+		"allowCors": false,
+		"allowOrigin": "",
+		"allowMethods": "",
+		"allowHeaders": ""
+	}
+}
